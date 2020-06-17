@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PRIPRHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Funcionarios">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Nome" Type="varchar" MaxLength="80" />
+    <Property Name="Localidade" Type="varchar" MaxLength="80" />
+    <Property Name="CodPostal1" Type="nvarchar" MaxLength="15" />
+    <Property Name="CodPostal2" Type="nvarchar" MaxLength="35" />
+    <Property Name="Naturalidade" Type="nvarchar" MaxLength="35" />
+    <Property Name="Distrito" Type="varchar" MaxLength="2" />
+    <Property Name="Nacionalidade" Type="nvarchar" MaxLength="3" />
+    <Property Name="Telefone" Type="nvarchar" MaxLength="15" />
+    <Property Name="EstadoCivil" Type="nvarchar" MaxLength="3" />
+    <Property Name="Sexo" Type="nvarchar" MaxLength="1" />
+    <Property Name="DataNascimento" Type="datetime" />
+    <Property Name="DataAdmissao" Type="datetime" />
+    <Property Name="DataReadmissao" Type="datetime" />
+    <Property Name="DataFimContrato" Type="datetime" />
+    <Property Name="Categoria" Type="nvarchar" MaxLength="10" />
+    <Property Name="Profissao" Type="nvarchar" MaxLength="12" />
+    <Property Name="Qualificacao" Type="nvarchar" MaxLength="3" />
+    <Property Name="DataQualif" Type="datetime" />
+    <Property Name="Habilitacao" Type="nvarchar" MaxLength="3" />
+    <Property Name="TipoContrato" Type="int" />
+    <Property Name="DataDemissao" Type="datetime" />
+    <Property Name="DataPromocao" Type="datetime" />
+    <Property Name="MotivoPromocao" Type="nvarchar" MaxLength="3" />
+    <Property Name="HorasSemana" Type="real" />
+    <Property Name="CodEstabelecimento" Type="nvarchar" MaxLength="3" />
+    <Property Name="Situacao" Type="nvarchar" MaxLength="3" />
+    <Property Name="SituacaoQP" Type="nvarchar" MaxLength="10" />
+    <Property Name="NumBI" Type="nvarchar" MaxLength="20" />
+    <Property Name="LocalEmBi" Type="nvarchar" MaxLength="20" />
+    <Property Name="DataEmBi" Type="datetime" />
+    <Property Name="CartaConducao" Type="nvarchar" MaxLength="15" />
+    <Property Name="Vencimento" Type="float" />
+    <Property Name="DataUltAumento" Type="datetime" />
+    <Property Name="MotivoAumento" Type="nvarchar" MaxLength="3" />
+    <Property Name="Notas" Type="ntext" />
+    <Property Name="NumContr" Type="nvarchar" MaxLength="20" />
+    <Property Name="CodRepFinancas" Type="nvarchar" MaxLength="5" />
+    <Property Name="CodIRS" Type="varchar" MaxLength="2" />
+    <Property Name="TotalDependentes" Type="smallint" />
+    <Property Name="TotalDepDeficientes" Type="smallint" />
+    <Property Name="ConjugeDef" Type="bit" Nullable="false" />
+    <Property Name="IRSFixo" Type="real" />
+    <Property Name="NomeConjuge" Type="nvarchar" MaxLength="50" />
+    <Property Name="CodSegSocial" Type="nvarchar" MaxLength="3" />
+    <Property Name="NumBeneficiario" Type="nvarchar" MaxLength="15" />
+    <Property Name="CodSindicato" Type="nvarchar" MaxLength="3" />
+    <Property Name="NumSindicato" Type="nvarchar" MaxLength="15" />
+    <Property Name="TipoProcessamento" Type="smallint" />
+    <Property Name="DataUltProcessamento" Type="datetime" />
+    <Property Name="DataSubsFerias" Type="datetime" />
+    <Property Name="MesSubsFerias" Type="smallint" />
+    <Property Name="DataSubsNatal" Type="datetime" />
+    <Property Name="TurnosTaxa" Type="smallint" />
+    <Property Name="TurnosDia" Type="smallint" />
+    <Property Name="SubsAlim1" Type="smallint" />
+    <Property Name="SubsAlim2" Type="smallint" />
+    <Property Name="ValorSubsAlim" Type="float" />
+    <Property Name="ValorSubsEsp" Type="float" />
+    <Property Name="DiasSubsNatal" Type="real" />
+    <Property Name="DiasSubsFerias" Type="real" />
+    <Property Name="SalHora" Type="real" />
+    <Property Name="HoraEntradaM" Type="real" />
+    <Property Name="HoraSaidaM" Type="real" />
+    <Property Name="HoraEntradaT" Type="real" />
+    <Property Name="HoraSaidaT" Type="real" />
+    <Property Name="Foto" Type="nvarchar" MaxLength="50" />
+    <Property Name="DataInspMedica" Type="datetime" />
+    <Property Name="DescricaoInspMedica" Type="nvarchar" MaxLength="35" />
+    <Property Name="CodBancoEmpr" Type="nvarchar" MaxLength="3" />
+    <Property Name="Morada" Type="varchar" MaxLength="80" />
+    <Property Name="Email" Type="nvarchar" MaxLength="512" />
+    <Property Name="Periodo" Type="nvarchar" MaxLength="3" />
+    <Property Name="CodDepartamento" Type="nvarchar" MaxLength="10" />
+    <Property Name="NumPeriodoProcessado" Type="smallint" />
+    <Property Name="Instrumento" Type="nvarchar" MaxLength="3" />
+    <Property Name="SubsNatalProcessado" Type="bit" Nullable="false" />
+    <Property Name="VencimentoMensal" Type="float" />
+    <Property Name="DiuturnidadeMensal" Type="float" />
+    <Property Name="Diuturnidades" Type="float" />
+    <Property Name="NumHorasSemInstrumentos" Type="bit" Nullable="false" />
+    <Property Name="PertenceOrgaosSoc" Type="bit" Nullable="false" />
+    <Property Name="DataProximaDiuturnidade" Type="datetime" />
+    <Property Name="Telemovel" Type="nvarchar" MaxLength="15" />
+    <Property Name="LimiteContribuicoesSegSocial" Type="float" />
+    <Property Name="CGA" Type="nvarchar" MaxLength="3" />
+    <Property Name="NumCGA" Type="nvarchar" MaxLength="10" />
+    <Property Name="NomeCGA" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegTmpPercAcresCGA" Type="real" />
+    <Property Name="NumDiuturnidadesCGA" Type="int" />
+    <Property Name="NivelRemCGA" Type="nvarchar" MaxLength="3" />
+    <Property Name="RegTmpSituacaoCGA" Type="nvarchar" MaxLength="3" />
+    <Property Name="RegTmpNumHorasCGA" Type="real" />
+    <Property Name="UltimaProgressao" Type="datetime" />
+    <Property Name="DiasSubsNatalJaPagos" Type="real" />
+    <Property Name="TipoPessoal" Type="nvarchar" MaxLength="3" />
+    <Property Name="UltimoAnoProcessado" Type="smallint" Nullable="false" />
+    <Property Name="DomicilioFiscal" Type="smallint" Nullable="false" />
+    <Property Name="Extensao" Type="nvarchar" MaxLength="15" />
+    <Property Name="CodSituacaoQP" Type="smallint" Nullable="false" />
+    <Property Name="NomeAbreviado" Type="nvarchar" MaxLength="25" />
+    <Property Name="Contrato" Type="nvarchar" MaxLength="3" />
+    <Property Name="DataAvisoPrevio" Type="datetime" />
+    <Property Name="PeriodoExp" Type="int" />
+    <Property Name="MotivoSaida" Type="nvarchar" MaxLength="3" />
+    <Property Name="DataValidadeCarta" Type="datetime" />
+    <Property Name="DataValidadeBI" Type="datetime" />
+    <Property Name="Concelho" Type="varchar" MaxLength="4" />
+    <Property Name="Freguesia" Type="varchar" MaxLength="2" />
+    <Property Name="DataIniProfissao" Type="datetime" />
+    <Property Name="DataHabilitacao" Type="datetime" />
+    <Property Name="CargoPrincipal" Type="nvarchar" MaxLength="5" />
+    <Property Name="RegimeTrab" Type="varchar" MaxLength="3" />
+    <Property Name="Altura" Type="float" />
+    <Property Name="GrupoSanguineo" Type="varchar" MaxLength="10" />
+    <Property Name="DeficienciasFisicas" Type="text" />
+    <Property Name="OutrasDadosFisicos" Type="text" />
+    <Property Name="DeficienciasCronicas" Type="text" />
+    <Property Name="DoencasHereditarias" Type="text" />
+    <Property Name="Cirurgias" Type="text" />
+    <Property Name="NomeDistrito" Type="varchar" MaxLength="35" />
+    <Property Name="NomeConcelho" Type="varchar" MaxLength="35" />
+    <Property Name="IdGDOC" Type="uniqueidentifier" />
+    <Property Name="NomeFreguesia" Type="varchar" MaxLength="50" />
+    <Property Name="VencimentoLiquidoEstimado" Type="money" />
+    <Property Name="Moeda" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="EpigrafeAT" Type="varchar" MaxLength="6" />
+    <Property Name="GrupoCotizacao" Type="varchar" MaxLength="2" />
+    <Property Name="Bonificacao" Type="varchar" MaxLength="3" />
+    <Property Name="IniciaisNomeSegSocial" Type="varchar" MaxLength="5" />
+    <Property Name="PercIncapacidade" Type="real" />
+    <Property Name="MobilidadeReduzida" Type="bit" />
+    <Property Name="ReducaoIrregularidades" Type="float" />
+    <Property Name="GastosDedutiveis" Type="float" />
+    <Property Name="PensaoConjuge" Type="float" />
+    <Property Name="PensaoFilhos" Type="float" />
+    <Property Name="MobilidadeGeografica" Type="bit" />
+    <Property Name="ProlongacaoActLaboral" Type="bit" />
+    <Property Name="VencimentoDiario" Type="float" />
+    <Property Name="TipoCalculoVencimento" Type="smallint" />
+    <Property Name="VencimentoConjSupLimite" Type="bit" />
+    <Property Name="NumPassaporte" Type="varchar" MaxLength="20" />
+    <Property Name="LocalEmPassaporte" Type="varchar" MaxLength="20" />
+    <Property Name="DataEmPassaporte" Type="datetime" />
+    <Property Name="DataValidadePassaporte" Type="datetime" />
+    <Property Name="NumIE" Type="varchar" MaxLength="20" />
+    <Property Name="LocalEmIE" Type="varchar" MaxLength="20" />
+    <Property Name="DataEmIE" Type="datetime" />
+    <Property Name="DataValidadeIE" Type="datetime" />
+    <Property Name="CodSeguro" Type="uniqueidentifier" />
+    <Property Name="DataInicioBonificacao" Type="datetime" />
+    <Property Name="DataFimBonificacao" Type="datetime" />
+    <Property Name="TipoRendimento" Type="nvarchar" MaxLength="5" />
+    <Property Name="GrupoTraco" Type="varchar" MaxLength="4" />
+    <Property Name="MinPessoalFamiliar" Type="float" Nullable="false" />
+    <Property Name="Regime" Type="smallint" Nullable="false" />
+    <Property Name="BaseCotizacao" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="CustoPadrao" Type="decimal" Precision="16" Scale="5" Nullable="false" />
+    <Property Name="UtilizadoCCOP" Type="bit" Nullable="false" />
+    <Property Name="RecursoCCOP" Type="int" />
+    <Property Name="Isento" Type="bit" Nullable="false" />
+    <Property Name="PercVencParaSubsFerias" Type="nvarchar" MaxLength="200" />
+    <Property Name="PercVencParaSubsNatal" Type="nvarchar" MaxLength="200" />
+    <Property Name="EmprestimoBancario" Type="bit" />
+    <Property Name="EmprestimoBancarioAntesRegul" Type="bit" />
+    <Property Name="ValorAbateAntesRegul" Type="float" Nullable="false" />
+    <Property Name="RetribAnuaisIniciais" Type="float" Nullable="false" />
+    <Property Name="MotivoAdmissao" Type="nvarchar" MaxLength="3" />
+    <Property Name="PrimeiroNome" Type="nvarchar" MaxLength="80" />
+    <Property Name="PrimeiroApelido" Type="nvarchar" MaxLength="60" />
+    <Property Name="SegundoApelido" Type="nvarchar" MaxLength="60" />
+    <Property Name="ContribuinteNaoResidente" Type="nvarchar" MaxLength="20" />
+    <Property Name="AplicabilidadeIRCT" Type="varchar" MaxLength="10" />
+    <Property Name="CategoriaEscalao" Type="int" />
+    <Property Name="MesSubsNatal" Type="smallint" />
+    <Property Name="FormaPagSN" Type="nvarchar" MaxLength="10" />
+    <Property Name="FormaPagSF" Type="nvarchar" MaxLength="10" />
+    <Property Name="ProcDiasAnterioresSN" Type="bit" Nullable="false" />
+    <Property Name="ProcDiasAnterioresSF" Type="bit" Nullable="false" />
+    <Property Name="CodAlimDiasProc" Type="varchar" MaxLength="10" />
+    <Property Name="CodAlimValorFixo" Type="varchar" MaxLength="10" />
+    <Property Name="CodAlimEspecie" Type="varchar" MaxLength="10" />
+    <Property Name="TabIRPS" Type="nvarchar" MaxLength="20" />
+    <Property Name="LigadoTimesheets" Type="bit" Nullable="false" />
+    <Property Name="Pais" Type="nvarchar" MaxLength="2" />
+    <Property Name="ADSE" Type="nvarchar" MaxLength="3" />
+    <Property Name="AguardarAposentacao" Type="bit" />
+    <Property Name="AnosFuncaoPublica" Type="int" />
+    <Property Name="ComprovativoGravidez" Type="bit" />
+    <Property Name="DataAposentacao" Type="datetime" />
+    <Property Name="DataDespachoDR" Type="datetime" />
+    <Property Name="DataGravidez" Type="datetime" />
+    <Property Name="DataInicioAdmPub" Type="datetime" />
+    <Property Name="DataInicioCategoria" Type="datetime" />
+    <Property Name="DataInicioEscalao" Type="datetime" />
+    <Property Name="DataValidadeADSE" Type="datetime" />
+    <Property Name="DiarioRepublica" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiasFuncaoPublica" Type="int" />
+    <Property Name="DiasNaCategoria" Type="int" />
+    <Property Name="DiasNoEscalao" Type="int" />
+    <Property Name="DireitoSubsidioPreNatal" Type="bit" />
+    <Property Name="EducacaoFuncao" Type="nvarchar" MaxLength="1" />
+    <Property Name="EducacaoSituacao" Type="nvarchar" MaxLength="2" />
+    <Property Name="Escalao" Type="int" />
+    <Property Name="InactivoTemp" Type="bit" />
+    <Property Name="Indice" Type="int" />
+    <Property Name="MesesFuncaoPublica" Type="int" />
+    <Property Name="MotivoMC" Type="varchar" MaxLength="2" />
+    <Property Name="NivelRemuneratorio" Type="nvarchar" MaxLength="7" />
+    <Property Name="NumADSE" Type="nvarchar" MaxLength="12" />
+    <Property Name="NumeroNaciturnos" Type="int" />
+    <Property Name="PercentIndice100" Type="float" />
+    <Property Name="ProcessoExecucao" Type="nvarchar" MaxLength="20" />
+    <Property Name="RegimeIndice100" Type="nvarchar" MaxLength="3" />
+    <Property Name="TabelaIrsAposentacao" Type="nvarchar" MaxLength="2" />
+    <Property Name="TipoBalancoSocial" Type="tinyint" />
+    <Property Name="Utilizador" Type="nvarchar" MaxLength="20" />
+    <Property Name="ValorDifPosicaoRemun" Type="float" />
+    <Property Name="ValorMensalAposentacao" Type="float" />
+    <Property Name="ModContratoCom" Type="varchar" MaxLength="250" />
+    <Property Name="DataComunicacao" Type="datetime" />
+    <Property Name="UtilizadorComunicacao" Type="varchar" MaxLength="250" />
+    <Property Name="CartaoResidente" Type="varchar" MaxLength="50" />
+    <Property Name="DataEmissaoCR" Type="datetime" />
+    <Property Name="DataValidadeCR" Type="datetime" />
+    <Property Name="LocalEmCR" Type="varchar" MaxLength="20" />
+    <Property Name="TipoMoeda" Type="smallint" />
+    <Property Name="IdentContrFundos" Type="nvarchar" MaxLength="15" />
+    <Property Name="DataComFundos" Type="datetime" />
+    <Property Name="DataCessaFundos" Type="datetime" />
+    <Property Name="MotivoCessaFundos" Type="nvarchar" MaxLength="4" />
+    <Property Name="DataComAltVencFundos" Type="datetime" />
+    <Property Name="RegimeExRes" Type="tinyint" />
+  </EntityType>
+  <EntityContainer Name="PRIPRHModelStoreContainer">
+    <EntitySet Name="Funcionarios" EntityType="Self.Funcionarios" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

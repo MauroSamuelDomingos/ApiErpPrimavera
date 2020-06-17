@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PRIPRHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Funcionarios">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nome" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Localidade" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="CodPostal1" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="CodPostal2" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="Naturalidade" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="Distrito" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Nacionalidade" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="Telefone" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="EstadoCivil" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="Sexo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="DataNascimento" Type="DateTime" Precision="3" />
+    <Property Name="DataAdmissao" Type="DateTime" Precision="3" />
+    <Property Name="DataReadmissao" Type="DateTime" Precision="3" />
+    <Property Name="DataFimContrato" Type="DateTime" Precision="3" />
+    <Property Name="Categoria" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Profissao" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="Qualificacao" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="DataQualif" Type="DateTime" Precision="3" />
+    <Property Name="Habilitacao" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="TipoContrato" Type="Int32" />
+    <Property Name="DataDemissao" Type="DateTime" Precision="3" />
+    <Property Name="DataPromocao" Type="DateTime" Precision="3" />
+    <Property Name="MotivoPromocao" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="HorasSemana" Type="Single" />
+    <Property Name="CodEstabelecimento" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="Situacao" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="SituacaoQP" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="NumBI" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LocalEmBi" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DataEmBi" Type="DateTime" Precision="3" />
+    <Property Name="CartaConducao" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Vencimento" Type="Double" />
+    <Property Name="DataUltAumento" Type="DateTime" Precision="3" />
+    <Property Name="MotivoAumento" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="Notas" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NumContr" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CodRepFinancas" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="CodIRS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="TotalDependentes" Type="Int16" />
+    <Property Name="TotalDepDeficientes" Type="Int16" />
+    <Property Name="ConjugeDef" Type="Boolean" Nullable="false" />
+    <Property Name="IRSFixo" Type="Single" />
+    <Property Name="NomeConjuge" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CodSegSocial" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="NumBeneficiario" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="CodSindicato" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="NumSindicato" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="TipoProcessamento" Type="Int16" />
+    <Property Name="DataUltProcessamento" Type="DateTime" Precision="3" />
+    <Property Name="DataSubsFerias" Type="DateTime" Precision="3" />
+    <Property Name="MesSubsFerias" Type="Int16" />
+    <Property Name="DataSubsNatal" Type="DateTime" Precision="3" />
+    <Property Name="TurnosTaxa" Type="Int16" />
+    <Property Name="TurnosDia" Type="Int16" />
+    <Property Name="SubsAlim1" Type="Int16" />
+    <Property Name="SubsAlim2" Type="Int16" />
+    <Property Name="ValorSubsAlim" Type="Double" />
+    <Property Name="ValorSubsEsp" Type="Double" />
+    <Property Name="DiasSubsNatal" Type="Single" />
+    <Property Name="DiasSubsFerias" Type="Single" />
+    <Property Name="SalHora" Type="Single" />
+    <Property Name="HoraEntradaM" Type="Single" />
+    <Property Name="HoraSaidaM" Type="Single" />
+    <Property Name="HoraEntradaT" Type="Single" />
+    <Property Name="HoraSaidaT" Type="Single" />
+    <Property Name="Foto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DataInspMedica" Type="DateTime" Precision="3" />
+    <Property Name="DescricaoInspMedica" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="CodBancoEmpr" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="Morada" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="Periodo" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="CodDepartamento" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="NumPeriodoProcessado" Type="Int16" />
+    <Property Name="Instrumento" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="SubsNatalProcessado" Type="Boolean" Nullable="false" />
+    <Property Name="VencimentoMensal" Type="Double" />
+    <Property Name="DiuturnidadeMensal" Type="Double" />
+    <Property Name="Diuturnidades" Type="Double" />
+    <Property Name="NumHorasSemInstrumentos" Type="Boolean" Nullable="false" />
+    <Property Name="PertenceOrgaosSoc" Type="Boolean" Nullable="false" />
+    <Property Name="DataProximaDiuturnidade" Type="DateTime" Precision="3" />
+    <Property Name="Telemovel" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="LimiteContribuicoesSegSocial" Type="Double" />
+    <Property Name="CGA" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="NumCGA" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="NomeCGA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RegTmpPercAcresCGA" Type="Single" />
+    <Property Name="NumDiuturnidadesCGA" Type="Int32" />
+    <Property Name="NivelRemCGA" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="RegTmpSituacaoCGA" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="RegTmpNumHorasCGA" Type="Single" />
+    <Property Name="UltimaProgressao" Type="DateTime" Precision="3" />
+    <Property Name="DiasSubsNatalJaPagos" Type="Single" />
+    <Property Name="TipoPessoal" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="UltimoAnoProcessado" Type="Int16" Nullable="false" />
+    <Property Name="DomicilioFiscal" Type="Int16" Nullable="false" />
+    <Property Name="Extensao" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="CodSituacaoQP" Type="Int16" Nullable="false" />
+    <Property Name="NomeAbreviado" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Contrato" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="DataAvisoPrevio" Type="DateTime" Precision="3" />
+    <Property Name="PeriodoExp" Type="Int32" />
+    <Property Name="MotivoSaida" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="DataValidadeCarta" Type="DateTime" Precision="3" />
+    <Property Name="DataValidadeBI" Type="DateTime" Precision="3" />
+    <Property Name="Concelho" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="Freguesia" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="DataIniProfissao" Type="DateTime" Precision="3" />
+    <Property Name="DataHabilitacao" Type="DateTime" Precision="3" />
+    <Property Name="CargoPrincipal" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="RegimeTrab" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Altura" Type="Double" />
+    <Property Name="GrupoSanguineo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DeficienciasFisicas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="OutrasDadosFisicos" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DeficienciasCronicas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DoencasHereditarias" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Cirurgias" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="NomeDistrito" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="NomeConcelho" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="IdGDOC" Type="Guid" />
+    <Property Name="NomeFreguesia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VencimentoLiquidoEstimado" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Moeda" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EpigrafeAT" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="GrupoCotizacao" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Bonificacao" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="IniciaisNomeSegSocial" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="PercIncapacidade" Type="Single" />
+    <Property Name="MobilidadeReduzida" Type="Boolean" />
+    <Property Name="ReducaoIrregularidades" Type="Double" />
+    <Property Name="GastosDedutiveis" Type="Double" />
+    <Property Name="PensaoConjuge" Type="Double" />
+    <Property Name="PensaoFilhos" Type="Double" />
+    <Property Name="MobilidadeGeografica" Type="Boolean" />
+    <Property Name="ProlongacaoActLaboral" Type="Boolean" />
+    <Property Name="VencimentoDiario" Type="Double" />
+    <Property Name="TipoCalculoVencimento" Type="Int16" />
+    <Property Name="VencimentoConjSupLimite" Type="Boolean" />
+    <Property Name="NumPassaporte" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LocalEmPassaporte" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DataEmPassaporte" Type="DateTime" Precision="3" />
+    <Property Name="DataValidadePassaporte" Type="DateTime" Precision="3" />
+    <Property Name="NumIE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LocalEmIE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DataEmIE" Type="DateTime" Precision="3" />
+    <Property Name="DataValidadeIE" Type="DateTime" Precision="3" />
+    <Property Name="CodSeguro" Type="Guid" />
+    <Property Name="DataInicioBonificacao" Type="DateTime" Precision="3" />
+    <Property Name="DataFimBonificacao" Type="DateTime" Precision="3" />
+    <Property Name="TipoRendimento" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="GrupoTraco" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="MinPessoalFamiliar" Type="Double" Nullable="false" />
+    <Property Name="Regime" Type="Int16" Nullable="false" />
+    <Property Name="BaseCotizacao" Type="Decimal" Precision="11" Scale="2" />
+    <Property Name="CustoPadrao" Type="Decimal" Precision="16" Scale="5" Nullable="false" />
+    <Property Name="UtilizadoCCOP" Type="Boolean" Nullable="false" />
+    <Property Name="RecursoCCOP" Type="Int32" />
+    <Property Name="Isento" Type="Boolean" Nullable="false" />
+    <Property Name="PercVencParaSubsFerias" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PercVencParaSubsNatal" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="EmprestimoBancario" Type="Boolean" />
+    <Property Name="EmprestimoBancarioAntesRegul" Type="Boolean" />
+    <Property Name="ValorAbateAntesRegul" Type="Double" Nullable="false" />
+    <Property Name="RetribAnuaisIniciais" Type="Double" Nullable="false" />
+    <Property Name="MotivoAdmissao" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="PrimeiroNome" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="PrimeiroApelido" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="SegundoApelido" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="ContribuinteNaoResidente" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="AplicabilidadeIRCT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CategoriaEscalao" Type="Int32" />
+    <Property Name="MesSubsNatal" Type="Int16" />
+    <Property Name="FormaPagSN" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="FormaPagSF" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ProcDiasAnterioresSN" Type="Boolean" Nullable="false" />
+    <Property Name="ProcDiasAnterioresSF" Type="Boolean" Nullable="false" />
+    <Property Name="CodAlimDiasProc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CodAlimValorFixo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CodAlimEspecie" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TabIRPS" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LigadoTimesheets" Type="Boolean" Nullable="false" />
+    <Property Name="Pais" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="ADSE" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="AguardarAposentacao" Type="Boolean" />
+    <Property Name="AnosFuncaoPublica" Type="Int32" />
+    <Property Name="ComprovativoGravidez" Type="Boolean" />
+    <Property Name="DataAposentacao" Type="DateTime" Precision="3" />
+    <Property Name="DataDespachoDR" Type="DateTime" Precision="3" />
+    <Property Name="DataGravidez" Type="DateTime" Precision="3" />
+    <Property Name="DataInicioAdmPub" Type="DateTime" Precision="3" />
+    <Property Name="DataInicioCategoria" Type="DateTime" Precision="3" />
+    <Property Name="DataInicioEscalao" Type="DateTime" Precision="3" />
+    <Property Name="DataValidadeADSE" Type="DateTime" Precision="3" />
+    <Property Name="DiarioRepublica" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DiasFuncaoPublica" Type="Int32" />
+    <Property Name="DiasNaCategoria" Type="Int32" />
+    <Property Name="DiasNoEscalao" Type="Int32" />
+    <Property Name="DireitoSubsidioPreNatal" Type="Boolean" />
+    <Property Name="EducacaoFuncao" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EducacaoSituacao" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="Escalao" Type="Int32" />
+    <Property Name="InactivoTemp" Type="Boolean" />
+    <Property Name="Indice" Type="Int32" />
+    <Property Name="MesesFuncaoPublica" Type="Int32" />
+    <Property Name="MotivoMC" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="NivelRemuneratorio" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="NumADSE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="NumeroNaciturnos" Type="Int32" />
+    <Property Name="PercentIndice100" Type="Double" />
+    <Property Name="ProcessoExecucao" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="RegimeIndice100" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="TabelaIrsAposentacao" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="TipoBalancoSocial" Type="Byte" />
+    <Property Name="Utilizador" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ValorDifPosicaoRemun" Type="Double" />
+    <Property Name="ValorMensalAposentacao" Type="Double" />
+    <Property Name="ModContratoCom" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="DataComunicacao" Type="DateTime" Precision="3" />
+    <Property Name="UtilizadorComunicacao" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CartaoResidente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DataEmissaoCR" Type="DateTime" Precision="3" />
+    <Property Name="DataValidadeCR" Type="DateTime" Precision="3" />
+    <Property Name="LocalEmCR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TipoMoeda" Type="Int16" />
+    <Property Name="IdentContrFundos" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="DataComFundos" Type="DateTime" Precision="3" />
+    <Property Name="DataCessaFundos" Type="DateTime" Precision="3" />
+    <Property Name="MotivoCessaFundos" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="DataComAltVencFundos" Type="DateTime" Precision="3" />
+    <Property Name="RegimeExRes" Type="Byte" />
+  </EntityType>
+  <EntityContainer Name="PRIPRHEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Funcionarios" EntityType="Self.Funcionarios" />
+  </EntityContainer>
+</Schema>
